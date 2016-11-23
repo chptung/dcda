@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './0_grayscale.css';
 import './js/grayscale.js';
 import './App.css';
-import { jQuery } from 'jquery';
-import { Bootstrap } from 'react-bootstrap';
+import jQuery from 'jquery';
+import Bootstrap from 'react-bootstrap';
+import Helmet from 'react-helmet';
 
 class App extends Component {
   componentWillMount() {
@@ -27,6 +28,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Helmet
+              htmlAttributes={{"lang": "en", "amp": undefined}} // amp takes no value
+              title="Davis College Democrats Alumni Club"
+              titleTemplate="DCDAC.com - %s"
+              defaultTitle="Davis College Democrats Alumni Club"
+              meta={[
+                  {"name": "description", "content": "Davis College Democrats Alumni Club"},
+                  {"property": "og:type", "content": "article"}
+              ]}
+              link={[
+                  {"rel": "canonical", "href": "http://mysite.com/example"},
+                  {"rel": "apple-touch-icon", "href": "http://mysite.com/img/apple-touch-icon-57x57.png"},
+                  {"rel": "apple-touch-icon", "sizes": "72x72", "href": "http://mysite.com/img/apple-touch-icon-72x72.png"}
+              ]}
+              script={[
+                  {"src": "http://include.com/pathtojs.js", "type": "text/javascript"},
+                  {"type": "application/ld+json", "innerHTML": `{ "@context": "http://schema.org" }`}
+              ]}
+          />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
               {/* Navigation */}
           <nav className="navbar navbar-custom navbar-fixed-top" role="navigation">
