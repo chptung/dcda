@@ -13,6 +13,18 @@
   padding: 20px;
   color: white;
 }
+.navbar-header{
+  width:100%;
+}
+.navbar-items{
+  padding-left: 80%;
+}
+li.nav-item{
+  float:left;
+}
+ul.nav.navbar-nav {
+
+}
 
 .App-intro {
   font-size: large;
@@ -50,5 +62,27 @@
   }
 	60% {
     transform:translateY(-15px);
+  }
+}
+
+@media (max-width: 767px) {
+  .arrow {
+    position: absolute;
+    bottom: -225%;
+    left: 50%;
+    padding-bottom: 40px;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('http://nlitenmusic.neocities.org/nliten-music/images/white-arrow-down.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-items{
+    padding-left: 15%;
   }
 }

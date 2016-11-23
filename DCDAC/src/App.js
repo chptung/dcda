@@ -33,23 +33,20 @@ class App extends Component {
               <div className="container">
                   <div className="navbar-header">
                       <a className="navbar-brand page-scroll" href="#page-top">
-                          <i className="fa fa-play-circle"></i> <span className="light">Start</span> Bootstrap
+                          <i className="fa fa-play-circle"></i> Davis College Democrats <span className="light">Alumni Club</span>
                       </a>
+                      <div className="navbar-items">
+                          <ul className="nav navbar-nav">
+                              {/*  Hidden li included to remove active class from about link when scrolled up past about section */}
+                              <li className="nav-item">
+                                  <a className="page-scroll" href="#about">About</a>
+                              </li>
+                              <li className="nav-item">
+                                  <a className="page-scroll" href="#join">Join</a>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
-
-                  {/* Collect the nav links, forms, and other content for toggling*/}
-                  <div className="">
-                      <ul className="nav navbar-nav">
-                          {/*  Hidden li included to remove active class from about link when scrolled up past about section */}
-                          <li>
-                              <a className="page-scroll" href="#about">About</a>
-                          </li>
-                          <li>
-                              <a className="page-scroll" href="#join">Join</a>
-                          </li>
-                      </ul>
-                  </div>
-                  {/* /.navbar-collapse */}
               </div>
               {/* /.container*/}
           </nav>
