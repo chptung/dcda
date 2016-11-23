@@ -17,8 +17,38 @@
 .App-intro {
   font-size: large;
 }
+.intro{
+  min-height:100vh;
+}
+.arrow {
+  position: absolute;
+  bottom: -95%;
+  left: 50%;
+  padding-bottom: 40px;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url('http://nlitenmusic.neocities.org/nliten-music/images/white-arrow-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.bounce {
+  animation: bounce 2s infinite;
+}
+.navbar-custom{
+  background-color:#000000;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform:translateY(-30px);
+  }
+	60% {
+    transform:translateY(-15px);
+  }
 }
