@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.brand-heading{
+  font-size: 1rem;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -34,7 +36,7 @@ ul.nav.navbar-nav {
 }
 .arrow {
   position: absolute;
-  bottom: -95%;
+  bottom: -70%;
   left: 50%;
   padding-bottom: 40px;
   margin-left:-20px;
@@ -68,7 +70,7 @@ ul.nav.navbar-nav {
 @media (max-width: 767px) {
   .arrow {
     position: absolute;
-    bottom: -225%;
+    bottom: -115%;
     left: 50%;
     padding-bottom: 40px;
     margin-left:-20px;

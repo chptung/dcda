@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import './grayscale.css';
+import './0_grayscale.css';
 import './js/grayscale.js';
+import './App.css';
 import { jQuery } from 'jquery';
 import { Bootstrap } from 'react-bootstrap';
 
@@ -57,9 +57,11 @@ class App extends Component {
                   <div className="container">
                       <div className="row">
                           <div className="col-md-8 col-md-offset-2">
-                              <h1 className="brand-heading">Grayscale</h1>
-                              <div className="intro-text">A free, responsive, one page Bootstrap theme.
-                                  <br />Created by Start Bootstrap.<br /> </div>
+                              <div className="brand-heading">Join The Davis College Democrats Alumni Club</div>
+                              <div className="intro-text">Contribute to the success of fellow democrats.<br />
+                              Help shape our political landscape<br />
+                              Make a difference
+                              </div>
                               <div className="arrow bounce">
                               </div>
                           </div>
