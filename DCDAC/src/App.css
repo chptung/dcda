@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Asap|Bitter|Bree+Serif|Cabin|Maitree|Montserrat|Nunito|PT+Serif|Poppins|Sumana');
+
 body {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;
+font-family: 'Sumana', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Bitter', serif;
+font-family: 'Maitree', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Asap', sans-serif;*/
 }
 .App {
   text-align: center;
@@ -19,11 +30,14 @@ body {
   padding: 20px;
   color: white;
 }
+nav.navbar.navbar-custom.navbar-fixed-top {
+  background-color: #0057b8;
+}
 .navbar-header{
   width:100%;
 }
 .navbar-items{
-  padding-left: 80%;
+  padding-left: 70%;
 }
 li.nav-item{
   float:left;
@@ -56,7 +70,20 @@ ul.nav.navbar-nav {
   animation: bounce 2s infinite;
 }
 .navbar-custom{
-  background-color:#000000;
+  background-color:transparent;
+}
+.download-section{
+  min-height:90vh;
+}
+.footer{
+  padding: 20px 0px;
+}
+.copyright{
+  font-size:10px;
+}
+section#about{
+  /*min-height:100vh;*/
+  padding: 150px 100px 100px 100px;
 }
 
 @keyframes bounce {
@@ -85,10 +112,21 @@ ul.nav.navbar-nav {
     background-repeat: no-repeat;
     background-position: center;
   }
+  section#about{
+    /*min-height:100vh;*/
+    padding: 75px 25px 25px 25px;
+  }
 }
 
 @media (max-width: 1000px) {
   .navbar-items{
     padding-left: 15%;
+    float:left;
+  }
+}
+@media (max-width: 615px) {
+  .navbar-items{
+    padding-left: 5%;
+    float:left;
   }
 }
